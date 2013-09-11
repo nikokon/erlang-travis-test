@@ -20,11 +20,11 @@ compile:
 	@erl -make
 
 # Starts the application
-# start_app:
+start_app:
 #	Starts an erlang node with a shell, prepends ebin to the code path (see
 # 	"man erl" documentation for details) ans starts module main and function
 #	start
-#	erl -pa ebin -s $(MODULE) $(FUNC) $(ARG1) $(ARG2)
+	erl -pa ebin -s $(MODULE) $(FUNC) $(ARG1) $(ARG2)
 
 clean:
 	rm -rf *.beam
