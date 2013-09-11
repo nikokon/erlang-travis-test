@@ -1,0 +1,13 @@
+-module(client).
+
+-export([start/1]).
+
+%%% Type :: remote | local
+start(local) ->
+    start_local();
+start(remote) ->
+    start_remote().
+
+
+start_local() ->
+    
