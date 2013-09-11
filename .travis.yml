@@ -1,6 +1,7 @@
 language: erlang
 script: "make compile"
 otp_release:
+  - R16B01
   - R16B
   - R15B02
   - R15B01
