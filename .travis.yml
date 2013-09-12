@@ -8,4 +8,4 @@ otp_release:
   - R14B03
 after_success:
   - git checkout develop
-  - git merge $TRAVIS_BRANCH
+  - git merge staging
