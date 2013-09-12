@@ -12,6 +12,7 @@ start(remote, Name) ->
 
 
 %% Test comment
+test_fail() -> 
 start_local(Name) ->
     State = #state{name = Name},
     local_loop(State).
