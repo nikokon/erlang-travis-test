@@ -7,5 +7,5 @@ otp_release:
   - R14B04
   - R14B03
 after_success:
-  - git checkout erlang-travis-test/develop
+  - git checkout -qf develop
   - git merge staging
