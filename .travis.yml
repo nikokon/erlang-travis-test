@@ -7,5 +7,4 @@ otp_release:
   - R14B04
   - R14B03
 after_success:
-  - git checkout -qf develop
-  - git merge staging
+  - git branch -a
