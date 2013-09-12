@@ -6,3 +6,6 @@ otp_release:
   - R15B01
   - R14B04
   - R14B03
+after_success:
+  - git checkout develop
+  - git merge $TRAVIS_BRANCH
