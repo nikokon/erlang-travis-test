@@ -11,7 +11,7 @@ start(remote, Name) ->
     register(remote_client, spawn(client, start_remote, [Name])).
 
 
-
+%% Test comment
 start_local(Name) ->
     State = #state{name = Name},
     local_loop(State).
