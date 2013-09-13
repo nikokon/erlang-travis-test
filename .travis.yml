@@ -10,7 +10,7 @@ otp_release:
 env:
   global:
    - secure: "JLS6CRFJkMhomRhpDvEnJG/PVd8xs2CLsb82ASNNIgHenSxQ+lBBHRSWd+vIJeASNA5kOJ2XylhdYpqy+HklsEFov0AIJZEUDQYn0h2uh42jHDhw6QTCUda0bY64Lrlvo1Trzo1XtDID/NR8G2sSJckfncNPM0eJv102CTcxn4U="
-   - GH_OWNER: automatic
+   - GH_OWNER: projectcs13
    - GH_PROJECT_NAME: erlang-travis-test
 
 after_success:
