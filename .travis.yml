@@ -15,5 +15,6 @@ env:
 
 after_success:
   - git clone https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} > /dev/null 2>&1
-  - git checkout develop
-  - git merge staging
+#  - git checkout develop
+#  - git merge staging
+  - git branch -a
