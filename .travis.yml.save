@@ -1,0 +1,12 @@
+language: erlang
+script: "make compile"
+otp_release:
+  - R16B
+  - R15B02
+  - R15B01
+  - R14B04
+  - R14B03
+before_install:
+  - git clone git://github.com/projectcs13/erlang-travis-test.git
+after_success:
+  - git branch -a
