@@ -9,9 +9,9 @@ otp_release:
 
 env:
   global:
-    secure: "VPaTPI7jGrNBvTEgiFF0Dr2i1hNCw1wrTOI16MIdye0hfDB0a6Lj1pYPJkuWbgxJ4oPMGYkHX1+6GLvzYaBabEiM2ErptNNtt5YUCMvOVPfvZJP4HC3rKhA7XqlBT3MJeeGg1Ny6kw29lUBxgbLKVso+mleq25nPQi4n+a7+5kc="
-    GH_OWNER: automatic
-    GH_PROJECT_NAME: erlang-travis-test
+   - secure: "VPaTPI7jGrNBvTEgiFF0Dr2i1hNCw1wrTOI16MIdye0hfDB0a6Lj1pYPJkuWbgxJ4oPMGYkHX1+6GLvzYaBabEiM2ErptNNtt5YUCMvOVPfvZJP4HC3rKhA7XqlBT3MJeeGg1Ny6kw29lUBxgbLKVso+mleq25nPQi4n+a7+5kc="
+   - GH_OWNER: automatic
+   - GH_PROJECT_NAME: erlang-travis-test
 
 after_success:
   - git submodule add -b develop https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} staging > /dev/null
