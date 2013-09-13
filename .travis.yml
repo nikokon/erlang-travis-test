@@ -14,9 +14,8 @@ env:
    - GH_PROJECT_NAME: erlang-travis-test
 
 after_success:
-  - git submodule add -b develop https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} staging > /dev/null
+  - git clone -b develop https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} > /dev/null
   - git branch -a
-#  - git checkout develop
-#  - git merge staging
-  - cd staging
-  - git branch -a
+  - git checkout develop
+  - git merge staging
+  - git push
