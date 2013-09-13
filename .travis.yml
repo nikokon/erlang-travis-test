@@ -17,6 +17,6 @@ after_success:
   - git submodule add https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} stage > /dev/null
   - cd stage
   - git branch -a
-  - git checkout remote/origin/develop
-  - git merge remote/origin/staging
+  - git checkout remotes/origin/develop
+  - git merge remotes/origin/staging
   - git push
