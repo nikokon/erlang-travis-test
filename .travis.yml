@@ -9,7 +9,7 @@ otp_release:
 
 env:
   global:
-   - secure: "VPaTPI7jGrNBvTEgiFF0Dr2i1hNCw1wrTOI16MIdye0hfDB0a6Lj1pYPJkuWbgxJ4oPMGYkHX1+6GLvzYaBabEiM2ErptNNtt5YUCMvOVPfvZJP4HC3rKhA7XqlBT3MJeeGg1Ny6kw29lUBxgbLKVso+mleq25nPQi4n+a7+5kc="
+   - secure: "JLS6CRFJkMhomRhpDvEnJG/PVd8xs2CLsb82ASNNIgHenSxQ+lBBHRSWd+vIJeASNA5kOJ2XylhdYpqy+HklsEFov0AIJZEUDQYn0h2uh42jHDhw6QTCUda0bY64Lrlvo1Trzo1XtDID/NR8G2sSJckfncNPM0eJv102CTcxn4U="
    - GH_OWNER: automatic
    - GH_PROJECT_NAME: erlang-travis-test
 
